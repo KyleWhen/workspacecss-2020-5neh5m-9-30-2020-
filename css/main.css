@@ -229,6 +229,25 @@ p:nth-child(3n+1){
   background-color: hsla(0,100%,63%,0.9);
 }
 
+h3{
+  text-shadow: 0.5em, 0.4em, 0.2em azure;
+  border: black solid 2px;
+  border-radius: 20px 30px 10px 20px;
+  box-shadow: -10px -20px -20px black;
+  transition: ease-in-out 5s, transform 5s;
+}
+h3:hover{
+  transform: translate(15px, 15px);
+}
+h3~p{
+  opacity: 1;
+  transition: ease-in-out 5s, all 5s;
+}
+h3:active -p{
+  opacity: 0;
+  transform: scale(0, 2);
+}
+
 
 /**	05	Media  **/
 @media print{
